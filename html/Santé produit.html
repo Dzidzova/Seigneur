@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - La Maison des Perles</title>
+    <link rel="stylesheet" href="../css/santé produit.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/EAGLE LOGO .jpg" alt="Logo de l'entreprise">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="santé index.html">Accueil</a></li>
+                <li><a href="santé propos.html">À propos</a></li>
+                <li><a href="Santé produit.html">Produits</a></li>
+                <li><a href="Santé témoignage.html">Témoignages</a></li>
+                <li><a href="santé achat.html">Acheter</a></li>
+                <li><a href="../index.html">Retour</a></li>
+            </ul>
+        </nav>
+        <button id="domain-toggle" class="mini-btn">Domaines</button>
+            <ul id="domain-list" class="hidden">
+                <a href="Liqueur index.html" class="btn">Boissons et Liqueurs</a>
+                <a href="Epices index.html" class="btn">Epices Farines et Légumes</a>
+                <a href="bar-restaurant/index.html" class="btn">Bar & Restaurant</a>
+                <a href="santé index.html" class="btn">Joaillerie et Lithothérapie</a>
+                <a href="Terre index.html" class="btn">Articles en terre cuite</a>
+            </ul>
+    </header>
+
+    <div class="product-container">
+        <div class="product-header">
+            <h1>Nos Perles</h1>
+            <p>Découvrez nos perles faites à la main, inspirées des traditions africaines, alliant lithothérapie et bijou d’exception.</p>
+        </div>
+
+        <!-- Grille des produits -->
+        <div class="products-grid">
+            <div class="product-item colliers">
+                <img src="../img/PERLE 3.png" alt="Collier en pierres naturelles">
+                <div class="product-info">
+                    <h3>Collier en Agate</h3>
+                    <p class="product-description">Ce collier en agate apportera sérénité et équilibre dans votre vie.</p>
+                    <span class="price">15000,00 FCFA</span>
+                    <button class="buy-button" onclick="addToCart('Collier en Agate', 15000)">Ajouter au Panier</button>
+                </div>
+            </div>
+            <div class="product-item baya">
+                <img src="../img/baya.webp" alt="Baya traditionnel">
+                <div class="product-info">
+                    <h3>Baya en Perles</h3>
+                    <p class="product-description">Le bijou de hanche ancestral, symbole de féminité et de sensualité.</p>
+                    <span class="price">15000,00 FCFA</span>
+                    <button class="buy-button" onclick="addToCart('Baya en Perles', 15000)">Ajouter au Panier</button>
+                </div>
+            </div>
+            <div class="product-item bracelets">
+                <img src="../img/PERLE 5.png" alt="Bracelet en pierres semi-précieuses">
+                <div class="product-info">
+                    <h3>Bracelet en Améthyste</h3>
+                    <p class="product-description">L'améthyste, pierre de calme et de guérison, en bracelet.</p>
+                    <span class="price">15000,00 FCFA</span>
+                    <button class="buy-button" onclick="addToCart('Bracelet en Améthyste', 15000)">Ajouter au Panier</button>
+                </div>
+            </div>
+            <div class="product-item boucles">
+                <img src="../img/Turc.jpg" alt="Boucles d'oreilles en perles">
+                <div class="product-info">
+                    <h3>Boucles d'Oreilles Turquoise</h3>
+                    <p class="product-description">Des boucles d’oreilles sublimes en turquoise, pour apporter protection et énergie positive.</p>
+                    <span class="price">15000,00 FCFA</span>
+                    <button class="buy-button" onclick="addToCart('Boucles d\'Oreilles Turquoise', 15000)">Ajouter au Panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div id="cart-container">
+            <h2>Votre Panier</h2>
+            <div id="cart-items">
+                <!-- Les articles ajoutés au panier s'afficheront ici -->
+            </div>
+            <div class="cart-total finish-shopping"> <!-- Ajout de la classe finish-shopping -->
+                <p>Total : <span id="total-price">0 FCFA</span></p>
+                <p>Pour passer à la caisse, cliquez ici :</p>
+                <button id="finish-button" class="finish-button" disabled onclick="window.location.href='Liqueur achat.html'">
+                    Terminer
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EAGLE CONSULTING - Tous droits réservés.</p>
+    </footer>
+    <script src="../js/santé produit.js"></script>
+</body>
+</html>

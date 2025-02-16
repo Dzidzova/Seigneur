@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - La Maison des Perles</title>
+    <link rel="stylesheet" href="../css/Epice produit.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/EAGLE LOGO .jpg" alt="Logo de l'entreprise">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="Epices index.html">Accueil</a></li>
+                <li><a href="Epice propos.html">À propos</a></li>
+                <li><a href="Epice produit.html">Produits</a></li>
+                <li><a href="Epice temoignage.html">Témoignages</a></li>
+                <li><a href="Epice achat.html">Acheter</a></li>
+                <li><a href="../index.html">Retour</a></li>
+            </ul>
+        </nav>
+        <button id="domain-toggle" class="mini-btn">Domaines</button>
+            <ul id="domain-list" class="hidden">
+                <a href="Liqueur index.html" class="btn">Boissons et Liqueurs</a>
+                <a href="Epices index.html" class="btn">Epices Farines et Légumes</a>
+                <a href="bar-restaurant/index.html" class="btn">Bar & Restaurant</a>
+                <a href="santé index.html" class="btn">Joaillerie et Lithothérapie</a>
+                <a href="Terre index.html" class="btn">Articles en terre cuite</a>
+            </ul>
+    </header>         
+
+    <main class="title-grid">
+        <section class="page-container">
+            <!-- Contenu principal à gauche -->
+            <div class="product-content">
+                <div class="product-header">
+                    <h1>Epicer vos papilles grâce aux aux épices Dépur</h1>
+                    <p>
+                        Découvrez notre sélection d'épices, farines et légumes soigneusement cultivés et transformés<br>
+                        pour garantir qualité et saveurs authentiques. <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+<div class="Panier">
+    <h3>Vos ajouts se figurent dans le panier en bas</h3>
+</div>   
+<div class="Avant">
+    <h2>Description de nos épices :</h2>
+</div>
+
+        <!-- Grille des produits -->
+    <main>    
+        <Section>
+            <div class="products-grid">    
+                <div class="product-item depur-cristal">
+                    <img src="../img/Gboé.jpg" alt="DéPur Cristal">
+                    <div class="product-info">
+                        <h3>DéPur <br>Piment de table Gbo Ebessé déshydraté et moulu</h3>
+                        <p class="product-description">Les amateurs de piments seront comblés par cette nouveauté.</p>
+                        <span class="price">500,00 FCFA</span>
+                        <button class="buy-button" onclick="addToCart('DéPur Cristal', 500)">Ajouter au Panier</button>  
+                    </div>
+                </div>
+                
+                <div class="product-item depur-taurus">
+                    <img src="../img/Moutard.jpg" alt="DéPur Taurus">
+                    <div class="product-info">
+                        <h3>DéPur <br> Moutarde de Néré (Afiti)</h3>
+                        <p class="product-description">Produite exclusivement à base de graines, notre moutarde de Néré est 100% naturelle et offre un goût authentique.</p>
+                        <span class="price">500,00 FCFA</span>
+                        <button class="buy-button" onclick="addToCart('DéPur Taurus', 500)">Ajouter au Panier</button>
+                    </div>
+                </div>
+                <div class="product-item depur-digestif">
+                    <img src="../img/.jpg" alt="DéPur Agathe Miel">
+                    <div class="product-info">
+                        <h3>DéPur <br> Bouillon-épices « Adé »</h3>
+                        <p class="product-description">Ce bouillon est conçu pour répondre aux besoins des familles conscientes des dangers des exhausteurs de goût chimiques.</p>
+                        <span class="price">500,00 FCFA</span>
+                        <button class="buy-button" onclick="addToCart('DéPur Digestif', 500)">Ajouter au Panier</button>
+                    </div>
+                </div>
+            </div>
+        </Section>
+    </main>
+<div class="Avant">
+    <h2>Nos légumes déshydratés</h2>
+</div>
+    <main>
+        <section>
+            <div class="boisson">
+                <div class="product-item depur-cristal">
+                    <img src="../img/Gombo.jpg" alt="Liha">
+                    <div class="product-info">
+                        <h3>DéPur <br>Le gombo encore appelé Okra</h3>
+                        <p class="product-description">Saveur originale à découvrir : Okra est riche en antioxydants
+                        </p>
+                        <span class="price">500,00 FCFA</span>
+                        <button class="buy-button" onclick="addToCart('DéPur Cristal', 500)">Ajouter au Panier</button>
+                    </div>
+                </div>
+                <div class="product-item depur-cristal">
+                    <img src="../img/Aloma.jpg" alt="Tchoukoutou">
+                    <div class="product-info">
+                        <h3>DéPur <br> Aloma</h3>
+                        <p class="product-description">....</p>
+                        <span class="price">500,00 FCFA</span>
+                        <button class="buy-button" onclick="addToCart('DéPur Cristal', 500)">Ajouter au Panier</button>
+                    </div>
+                </div>
+                <div class="product-item depur-cristal">
+                    <img src="../img/.jpg" alt="Tchakpalo">
+                    <div class="product-info">
+                        <h3>DéPur <br> Adémè</h3>
+                        <p class="product-description"> ...</p>
+                        <span class="price">500,00 FCFA</span>
+                        <button class="buy-button" onclick="addToCart('DéPur Cristal', 500)">Ajouter au Panier</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <div id="cart-container">
+            <h2>Votre Panier</h2>
+            <div id="cart-items">
+                <!-- Les articles ajoutés au panier s'afficheront ici -->
+            </div>
+            <div class="cart-total finish-shopping"> <!-- Ajout de la classe finish-shopping -->
+                <p>Total : <span id="total-price">0 FCFA</span></p>
+                <p>Pour passer à la caisse, cliquez ici :</p>
+                <button id="finish-button" class="finish-button" disabled onclick="window.location.href='Liqueur achat.html'">
+                    Terminer
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EAGLE CONSULTING - Tous droits réservés.</p>
+    </footer>
+
+    <script src="../js/Epice produit.js"></script>
+</body>
+</html>
